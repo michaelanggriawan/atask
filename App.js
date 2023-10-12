@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Authentication from './screens/authentication';
-import NoteManager from './screens/note-manager';
+import Authentication from './screens/Authentication/authentication';
+import NoteManager from './screens/NoteManager/note-manager';
 
 const Stack = createNativeStackNavigator();
 

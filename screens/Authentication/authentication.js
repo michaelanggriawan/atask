@@ -14,6 +14,7 @@ const Authentication = () => {
 
     const result = await LocalAuthentication.authenticateAsync();
     if (result.success) {
+      alert("Authentication successful!");
       navigation.navigate('NoteManager'); 
     } else {
       alert("Authentication failed or canceled.");
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333', // Dark gray text
+    color: '#333',
     marginBottom: 20,
   },
   authenticateButton: {
